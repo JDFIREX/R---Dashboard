@@ -90,6 +90,9 @@ body{
                         font-size: 1.5rem;
                     }
                 }
+                .selectize-dropdown{
+                    margin-left: -.25vw;
+                }
             }
         }
     }
@@ -99,7 +102,9 @@ body{
 .main_dash{
     margin-top: 2rem;
     width: 100%;
+    height: 468px;
     display: flex;
+    border: 1px solid blue;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -146,15 +151,13 @@ body{
                             font-size: 1.5rem;
                         }
                     }
-                    .selectize-dropdown{
-                    }
                 }
             }
         }
     }
     .right_dash{
         width: 48.75%;
-        height: 200px;
+        height: 100%;
         border: 1px solid red;
     }
 }

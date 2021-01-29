@@ -138,12 +138,18 @@ body {
   font-size: 1.5rem;
 }
 
+.header .profit .stats .selectize-control .selectize-dropdown {
+  margin-left: -.25vw;
+}
+
 .main_dash {
   margin-top: 2rem;
   width: 100%;
+  height: 468px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid blue;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -227,7 +233,7 @@ body {
 
 .main_dash .right_dash {
   width: 48.75%;
-  height: 200px;
+  height: 100%;
   border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */
