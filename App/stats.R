@@ -21,7 +21,7 @@ statsBoxFlex <- div(
       value = "test - 1",
       c("test - 1","test - 2")
     ),
-    h5("$ 2 255 423"),
+   h5("$ 2 255 423", class="h5_dropdown"),
     div(
       class="s_item_profit",
       p("TOTAL PROFIL"),
@@ -38,7 +38,7 @@ statsBoxFlex <- div(
       value = "test - 1",
       c("test - 1","test - 2")
     ),
-    h5("$ 2 255 423"),
+    h5("$ 2 255 423", class="h5_dropdown"),
     div(
       class="s_item_profit",
       p("TOTAL PROFIL"),
@@ -55,7 +55,7 @@ statsBoxFlex <- div(
       value = "test - 1",
       c("test - 1","test - 2")
     ),
-    h5("$ 2 255 423"),
+    h5("$ 2 255 423", class="h5_dropdown"),
     div(
       class="s_item_profit",
       p("TOTAL PROFIL"),
@@ -72,13 +72,17 @@ statsBoxFlex <- div(
       value = "test - 1",
       c("test - 1","test - 2")
     ),
-    h5("$ 2 255 423"),
+    h5("$ 2 255 423", class="h5_dropdown"),
     div(
       class="s_item_profit",
       p("TOTAL PROFIL"),
       p("+ 4,5 %")
     )
   )
-  
-  
 )
+
+
+
+
+
+

@@ -39,9 +39,9 @@ ui <- semanticPage(
 
 server <- function(input, output) {
   output$plot1 <- wykresRender
+  
+  
 }
 shinyApp(ui, server)
-
-
 
 

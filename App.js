@@ -10,6 +10,8 @@ let wykres = document.querySelector(".wykres_btn");
 let wykresOpen = false;
 
 window.addEventListener("load", (e) => {
+    document.body.style.margin = "0px";
+    document.body.style.minHeight = "100vh";
     statsBTN.classList = "";
     wykresBTN.classList = "";
 })
@@ -52,8 +54,8 @@ function closeStats() {
         stats.classList.remove("statsBottom")
         statsBTN.innerHTML = "Statystyki"
     }, 300);
-    gs.to(".stats_box",.5,{
-        bottom: "-100vh"
+    gs.to(".stats_box",1,{
+        bottom: "-3500px"
     })
     gs.to(stats,.3,{
         opacity: "1"
@@ -78,7 +80,7 @@ function openWykres(){
 function closeWykres(){
     wykresOpen = false;
     gs.to(".wykres_box",.5,{
-        right: "-100vw"
+        right: "-1000px"
     })
     wykresBTN.innerHTML = "WYKRES"
 }

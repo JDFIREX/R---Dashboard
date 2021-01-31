@@ -6,23 +6,28 @@
   font-family: Helvetica;
 }
 
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
   position: relative;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  min-height: 600px;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   overflow: hidden;
 }
 
 .main_map {
   position: relative;
-  top: -10px;
-  left: -10px;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
 }
@@ -35,11 +40,12 @@ body {
   height: 3rem;
   border: 1px solid white;
   background-color: transparent;
+  z-index: 2000;
 }
 
 .stats .stats_btn {
-  width: 100%;
-  height: 100%;
+  width: 12rem;
+  height: 3rem;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
@@ -73,8 +79,7 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   z-index: 2;
-  width: calc(100% - 20px);
-  height: 250px;
+  width: 100%;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   padding: 1vw;
@@ -90,6 +95,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  overflow-y: scroll;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -102,6 +108,7 @@ body {
 .stats_box .stats_box_flex .stats_item {
   width: 23%;
   height: 100%;
+  padding-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.767);
   border-radius: 5px;
 }
@@ -156,8 +163,8 @@ body {
 
 .wykres_box {
   position: absolute;
-  top: -10px;
-  right: -100vw;
+  top: 0px;
+  right: -1000px;
   width: 900px;
   height: 100%;
   display: -webkit-box;
@@ -177,6 +184,7 @@ body {
           align-items: center;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  overflow-y: scroll;
 }
 
 .wykres_box .wykres_dane {
@@ -235,5 +243,92 @@ body {
 
 .wykres_btn button:hover {
   background-color: rgba(68, 59, 110, 0.616);
+}
+
+@media only screen and (max-width: 1250px) {
+  .stats_box {
+    bottom: -3500px;
+  }
+  .stats_box .stats_box_flex {
+    padding-top: 8.5rem;
+    height: 100vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stats_box .stats_box_flex .stats_item {
+    width: 40%;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  .statsBottom {
+    bottom: calc(100vh - 7.5rem);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .stats_box .stats_box_flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .stats_box .stats_box_flex .stats_item {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .stats_box .stats_box_flex {
+    padding-top: 10rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stats_box .stats_box_flex .stats_item {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .stats_box .stats_box_flex .stats_item #simple_dropdown {
+    font-size: 1.3rem;
+  }
+  .stats_box .stats_box_flex .stats_item h5 {
+    font-size: 1.3rem;
+  }
+  .stats_box .stats_box_flex .stats_item .s_item_profit p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .wykres_box {
+    right: -1000px;
+    width: 100%;
+    height: 100%;
+  }
+  .wykres_box .wykres_dane {
+    padding: 3vw;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.767);
+  }
 }
 /*# sourceMappingURL=style.css.map */
