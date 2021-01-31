@@ -1,0 +1,12 @@
+name: R---Dashboard
+title: R---Dashboard
+username:
+account: jdfirex
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3554169
+bundleId: 4163628
+url: https://jdfirex.shinyapps.io/R---Dashboard/
+when: 1612106859.13165
+asMultiple: FALSE
+asStatic: FALSE

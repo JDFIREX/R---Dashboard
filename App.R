@@ -1,6 +1,6 @@
-library(shiny)
 library(shinyWidgets)
 library(shiny.semantic)
+library(rgdal)
 
 source("./App/map.R")
 source("./App/stats.R")
